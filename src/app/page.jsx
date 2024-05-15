@@ -84,7 +84,7 @@ function ArrowDownIcon(props) {
 function Article({ article }) {
   return (
     <Card as="article">
-      <div href={`/articles/${article.slug}`}>
+      <div href={"/articles/${article.slug}"}>
         {article.title}
       </div>
       <Card.Eyebrow as="time" dateTime={article.date} decorate>
