@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
@@ -23,10 +21,6 @@ import image3 from '@/images/photos/image-3.jpeg'
 
 import { getAllArticles } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
-
-const cv = {
-  pdf: '/cv.pdf'
-}
 
 function MailIcon(props) {
   return (
@@ -227,13 +221,11 @@ function Resume() {
       </ol>
   
       <Button variant="secondary" className="group mt-6 w-full">
-  <Link href={cv.pdf} passHref>
-    <div className="flex items-center justify-center space-x-2" onClick={() => window.open(cv.pdf, '_blank')}>
-      Download CV
-      <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-    </div>
-  </Link>
-</Button>
+      <a href="/cv.pdf" download className="flex items-center justify-center space-x-2">
+        Download CV
+        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
+      </a>
+    </Button>
 
     </div>
   )
