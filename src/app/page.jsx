@@ -158,10 +158,10 @@ function Role({ role }) {
         <dt className="sr-only">Date</dt>
         <dd
           className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-          aria-label={`${startLabel} until ${endLabel}`}
+          aria-label={"${startLabel} until ${endLabel}"}
         >
-          <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
+          <time dateTime={startDate}>{startLabel}</time>
+          <span aria-hidden="true">—</span>
           <time dateTime={endDate}>{endLabel}</time>
         </dd>
       </dl>
@@ -172,38 +172,38 @@ function Role({ role }) {
 function Resume() {
   let resume = [
     {
-      company: 'Vet Solutions LTDA',
-      title: 'CEO',
+      company: "Vet Solutions LTDA",
+      title: "CEO",
       logo: logoVetsolu,
-      start: '2024',
+      start: "2024",
       end: {
-        label: 'Present',
+        label: "Present",
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Calbos Saúde Animal',
-      title: 'Veterinary commercial assistant',
+      company: "Calbos Saúde Animal",
+      title: "Veterinary commercial assistant",
       logo: logoCalbos,
-      start: '2023',
+      start: "2023",
       end: {
-        label: 'Present',
+        label: "Present",
         dateTime: new Date().getFullYear().toString(),
       },
     },
     {
-      company: 'Casa do Produtor Health',
-      title: 'Intership',
+      company: "Casa do Produtor Health",
+      title: "Intership",
       logo: logoCasadopro,
-      start: '2022',
-      end: '2023',
+      start: "2022",
+      end: "2023",
     },
     {
-      company: 'VetScan Diagnóstico',
-      title: 'Intership',
+      company: "VetScan Diagnóstico",
+      title: "Intership",
       logo: logoVetscan,
-      start: '2022',
-      end: '2022',
+      start: "2022",
+      end: "2022",
     },
   ]
 
@@ -231,7 +231,7 @@ function Resume() {
 }
 
 function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let rotations = ["rotate-2", "-rotate-2", "rotate-2", "rotate-2", "-rotate-2"]
 
   return (
     <div className="mt-16 sm:mt-20">
